@@ -1,0 +1,32 @@
+<br>
+<br>
+<p>List of Students </p>
+<nav>
+    <button class="addstudentbtn"><a routerLink="/studentform">Add student</a></button>
+    <!-- <button class="btn1"><a routerLink="/bookComponent">Book</a></button> -->
+    </nav>
+    <main class="container mt-5">
+    <div class="table-responsive custom-data-table-wrapper2">
+      <table class="table table-bordered custom-data-table">
+        <thead class="text-nowrap">
+<br>
+          <tr class="studenttable">
+        <th>RollNumber</th>
+        <th>Name</th>
+        <th>Branch</th>
+        <th>E-mail</th>
+        <th>Year</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr *ngFor="let item of studentdata">
+   <td> {{item.rollNumber}}</td>   
+    <td> {{ item.name }}</td>   
+        <td> {{item.branch}}</td>  
+             <td>  {{item.emailId}}</td>   
+                    <td> {{item.year}}</td>
+                         </tr>
+</tbody>
+</table>
+</div>
+</main>

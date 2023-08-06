@@ -1,0 +1,41 @@
+<br>
+<br>
+
+<p>List of Books </p>
+<nav>
+  <br>
+    <button class="addbooksbtn"><a routerLink="/bookform">Add Books</a></button>
+    
+ 
+ </nav>
+<main class="container mt-5">
+    <div class="table-responsive custom-data-table-wrapper2">
+      <table class="table table-bordered custom-data-table">
+        <thead class="text-nowrap">
+
+          <br>
+        <tr class="booktable">
+        <th>Book Name</th>
+        <th>Author's Name</th>
+        <th>Genre</th>
+        <th>Assigned</th>
+        
+        </tr>
+    </thead>
+    <tbody>
+<tr *ngFor="let item of bookdata">
+   <td> {{item.name}}</td>   
+    <td> {{ item.author }}</td>   
+        <td> {{item.genre}}</td>  
+             <td>  {{item.assigned}}</td>   
+                 </tr>
+
+
+                
+
+    
+
+</tbody>
+</table>
+</div>
+</main>
